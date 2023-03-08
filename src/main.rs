@@ -16,7 +16,7 @@ fn main() -> Result<(),PdfError> {
 
     doc.set_page_decorator(decorator);
 
-    doc.push(genpdf::elements::Paragraph::new("Telemetry reporting from Optus."));
+    doc.push(genpdf::elements::Paragraph::new("Telemetry reporting from Grafana."));
 
     //let mut writer = BufWriter::new(inner)
     let mut buff : Vec<u8> = vec![];
