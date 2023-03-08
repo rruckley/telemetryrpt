@@ -23,7 +23,8 @@ fn main() -> Result<(),PdfError> {
 
     let w = BufWriter::new(buff);
 
-    let pdf = doc.render(w);
+    //let pdf = doc.render(w);
+    doc.render_to_file("output.pdf").expect("Failed to write PDF file");
 
     Ok(())
 }
